@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Expenses</title>
+</head>
+<body>
+
+<h2>All Expenses</h2>
+
+<ul>
+    {% for item in expenses %}
+        <li>{{ item.name }} - ₹{{ item.amount }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Total: ₹{{ total }}</h3>
+
+<a href="/">Add More</a>
+
+</body>
+</html>
